@@ -1,0 +1,12 @@
+pre#thecode{
+  padding-left: 4em;
+}
+
+pre{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+pre:focus{
+  outline: none;
+}
