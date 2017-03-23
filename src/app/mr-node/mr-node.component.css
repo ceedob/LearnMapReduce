@@ -1,0 +1,15 @@
+app-mr-node{
+  width: 360px;
+  height: 100px;
+  margin: 1em;
+}
+#input{
+  width: 80px;
+}
+#fn{
+width: 200px;
+background-color: #eee;
+}
+#output{
+ width: 80px;
+}

@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+<div id="main" class="col stretch">
+  <div class="row stretch" style="overflow-y: auto; flex-grow: 1;">
+    <app-map-reduce-view></app-map-reduce-view>
+  </div>
+  <div class="row stretch" id="codes">
+    <div class="col stretch">
+      <app-code-editor></app-code-editor>
+    </div>
+    <div class="col stretch">
+      <app-code-editor></app-code-editor>
+    </div>
+  </div>
+</div>

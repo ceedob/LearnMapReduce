@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+.row.center,
+.row.stretch{
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-flow: row nowrap; /* Safari 6.1+ */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row.center > *{
+  flex-grow: 0;
+}
+.row.stretch > *{
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  min-height: 1px;
+}
+
+
+.col.center,
+.col.stretch {
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-flow: column nowrap; /* Safari 6.1+ */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col.stretch{
+  height:100%;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+.col.stretch > *{
+  width:100%;
+}
+
+.col.center > *{
+  flex-grow: 0;
+}
+
+.outline{
+  outline: 1px solid #333;
+}
