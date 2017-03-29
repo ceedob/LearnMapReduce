@@ -1,6 +1,8 @@
-<div class="outline" style="height: 400px; padding-top: 2px; padding-left: 15px; padding-right: 15px;">
+<div style="padding-top: 2px; padding-left: 15px; padding-right: 15px; padding-bottom: 15px;">
   <p>{{title}} Function</p>
-  <pre>function({{fn_header}}){{'{'}}</pre>
-  <pre id="thecode" contenteditable="">{{code}}</pre>
-  <pre>{{'}'}}</pre>
+  <div style="overflow-y: auto;max-height: 250px;" >
+    <pre>function({{fn_header}}){{'{'}}</pre>
+    <textarea [(ngModel)]="code"></textarea>
+    <pre>{{'}'}}</pre>
+  </div>
 </div>

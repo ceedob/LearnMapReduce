@@ -8,19 +8,27 @@ import { MapReduceViewComponent } from './map-reduce-view/map-reduce-view.compon
 import { CodeEditorComponent } from './code-editor/code-editor.component';
 import { MrNodeComponent } from './mr-node/mr-node.component';
 
+import { MapReduceService } from './map-reduce.service';
+import { InputComponentComponent } from './input-component/input-component.component';
+import { ShuffleComponentComponent } from './shuffle-component/shuffle-component.component';
+import { OutputComponentComponent } from './output-component/output-component.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     MapReduceViewComponent,
     CodeEditorComponent,
-    MrNodeComponent
+    MrNodeComponent,
+    InputComponentComponent,
+    ShuffleComponentComponent,
+    OutputComponentComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [MapReduceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

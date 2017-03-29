@@ -1,5 +1,9 @@
-pre#thecode{
+textarea{
   padding-left: 4em;
+  border: none;
+  font-family: monospace;
+  width: 100%;
+  height: 100px;
 }
 
 pre{

@@ -1,23 +1,17 @@
 <div class="row stretch" id="mrview">
-  <div class="col center" >
-    Input
+  <div class="col stretch" style="margin: 1em">
+    <app-input-component></app-input-component>
   </div>
   <div class="col center">
-    <app-mr-node fn="Mapper"></app-mr-node>
-    <app-mr-node fn="Mapper"></app-mr-node>
-    <app-mr-node fn="Mapper"></app-mr-node>
-    <app-mr-node fn="Mapper"></app-mr-node>
-    <app-mr-node fn="Mapper"></app-mr-node>
+    <app-mr-node fn="Mapper" *ngFor="let m of mappers"></app-mr-node>
+  </div>
+  <div class="col stretch" style="margin: 1em; overflow-y: auto">
+    <app-shuffle-component></app-shuffle-component>
   </div>
   <div class="col center">
-    Shuffle
+    <app-mr-node fn="Reduce" *ngFor="let r of reducers"></app-mr-node>
   </div>
-  <div class="col center">
-    <app-mr-node fn="Reduce"></app-mr-node>
-    <app-mr-node fn="Reduce"></app-mr-node>
-    <app-mr-node fn="Reduce"></app-mr-node>
-  </div>
-  <div class="col center">
-    Output
+  <div class="col stretch" style="margin: 1em; overflow-y: auto">
+    <app-output-component></app-output-component>
   </div>
 </div>
